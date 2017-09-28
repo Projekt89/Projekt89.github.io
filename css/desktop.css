@@ -1,0 +1,338 @@
+@media only screen and (min-width : 600px) {
+
+  /**
+  #EAF97D;
+  #179AFF;
+  ***** NAVIGATION *****
+  **/
+
+  .nav-link {
+    font-size: 2em;
+  }
+
+  .nav-item:nth-child(2) .nav-link::after {
+    left: calc(50% - 12px);
+  }
+
+  .nav-item:nth-child(2) .nav-link::before {
+    left: calc(50% - 12px);
+  }
+
+  /**
+  ***** PORTFOLIO *****
+  **/
+
+  .wrapper {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tech-list {
+    display: flex;
+    position: relative;
+    margin-left: -10px;
+  }
+
+  .tech-list::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    border-bottom: 10px solid #0578DD;
+    border-left: 10px solid transparent;
+  }
+
+  .project:nth-child(3n+4) .tech-list{
+    transform: translateX(40px);
+  }
+
+  .project:nth-child(3n+4) .tech-list::before{
+    display: none;
+  }
+}
+
+
+
+
+/* Tablets (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) {
+
+  /*
+  ***** COMMON STYLES *****
+  */
+  .wrapper {
+    max-width: 768px;
+  }
+  /*
+  ***** HEADER *****
+  */
+
+  header {
+    min-height: 80vh;
+  }
+
+  .question {
+    position: absolute;
+    top: 80px;
+    left: 10%;
+    z-index: 2
+  }
+
+  .quest-bar {
+    margin-top: 80px;
+  }
+
+  .quest-link {
+    font-size: 2.2em;
+  }
+
+  .quest-item:nth-child(2) .quest-link {
+    font-size: 1.4em;
+  }
+
+  .quest-item:nth-child(2)::after {
+    font-size: 15.1em;
+    top: -141px;
+  }
+
+  .quest-item:nth-child(2) .quest-link::after {
+    left: calc(50% - 15px);
+    border-top: 30px solid #EAF97D;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+  }
+
+  .quest-item:nth-child(2) .quest-link::before {
+    left: calc(50% - 15px);
+    width: 32px;
+  }
+
+  .navbar {
+    position: relative;
+    margin-top: 80px;
+  }
+
+  .quest-bar {
+    padding-bottom: 0px;
+    margin-bottom: 54px;
+    background-color: #179AFF;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  /** NAVIGATION **/
+
+  .menu {
+    right: inherit;
+    left: 0;
+
+  }
+
+  .menu-button {
+    transform: translateX(-30%);
+    text-align: left;
+  }
+
+  .menu-button:hover {
+    transform: translateX(0);
+  }
+
+  .menu-button::after {
+    transform: skewX(30deg) translateX(-10%);
+  }
+
+  .page-logo {
+    margin-left: 10px;
+  }
+
+  /*
+  ***** MAIN *****
+  */
+
+  article {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  article .title {
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-left: 40px;;
+    max-width: 50%;
+  }
+
+  /** TEXT ARTICLES **/
+  .path-of-web, .path-of-tech {
+    padding-left: 120px;
+    padding-right: 100px;
+  }
+
+  /** PORTFOLIO **/
+  .vertical-text {
+    padding-left: 100px;
+    line-height: 58px;
+    font-size: 2.35em;
+  }
+
+  .project:nth-child(3n-1) {
+    margin-left: 15%;
+    margin-right: auto;
+    width: 75%;
+  }
+
+  .project:nth-child(3n-1) .tech-list {
+    margin-left: -10px;
+  }
+
+  .project:nth-child(3n+4) .tech-list{
+    transform: translateX(58px);
+    margin-left: 0;
+  }
+
+  .portfolio-end-phrase {
+    font-size: 2em;
+    text-align: right;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  /** MORE INFO AND SOCIALS **/
+  .more-info .wrapper {
+    padding-left: 100px;
+  }
+
+  .more-info h3.title {
+    max-width: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .more-info-list {
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .more-info-list li {
+    min-width: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  .more-info-list li:first-child {
+    height: 33%;
+    width: 100%;
+    min-height: 0;
+    margin-bottom: 30px;
+  }
+
+  .socials-about {
+    transform: translateY(0px);
+  }
+
+  .socials-about li:first-child {
+    margin-top: 33%;
+    margin-bottom: 10px;
+  }
+
+  /*
+  ***** FOOTER *****
+  */
+
+  footer .title {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  footer .title, .outer-links{
+    padding-left: 110px;
+  }
+
+  .links-list li {
+    min-width: 30%;
+  }
+
+  /**
+  ***** CHANGE STATE CLASSES JS *****
+  **/
+
+  .menu.sticky-top {
+    top: 269px;
+  }
+
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+
+
+    /*
+    ***** COMMON STYLES *****
+    */
+      .wrapper {
+        max-width: 1336px;
+      }
+    /*
+    ***** HEADER *****
+    */
+    header {
+      min-height: 60vh;
+    }
+
+    .question, .answer {
+      font-size: 2.8em;
+    }
+
+    .answer {
+      padding-bottom: 80px;
+    }
+
+    .quest-bar {
+      margin-top: 140px;
+    }
+
+    .quest-link {
+      font-size: 3em;
+    }
+
+    .quest-item:nth-child(2) .quest-link {
+      font-size: 2em;
+    }
+
+    .quest-item:nth-child(2)::after {
+      font-size: 20.4em;
+      top: -189px;
+    }
+
+    .quest-item:nth-child(2) .quest-link::after {
+      left: calc(50% - 20px);
+      border-top: 40px solid #EAF97D;
+      border-left: 21px solid transparent;
+      border-right: 22px solid transparent;
+    }
+
+    .quest-item:nth-child(2) .quest-link::before {
+      left: calc(50% - 20px);
+      width: 43px;
+    }
+
+    .quest-bar {
+      padding-bottom: 0px;
+      margin-bottom: 70px;
+      background-color: #179AFF;
+    }
+
+    /*
+    ***** MAIN *****
+    */
+
+    /*
+    ***** FOOTER *****
+    */
+
+}
