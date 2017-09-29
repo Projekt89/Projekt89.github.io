@@ -4,7 +4,6 @@
     /** STICKY ITEMS MENU **/
     $(this).scroll(function(){
       stickTop(stickyTable);
-    /*  menuMark();*/
     });
 
     let stickyTable = {
@@ -31,18 +30,6 @@
         }
       };
     }
-
-    /** LOCATION MENU MARKING  **
-    function menuMark() {
-      let scrollPos = $(document).scrollTop();
-      let sections = $('.menu-button a');
-      sections.each(function(index,el){
-        console.log($(this).offset().top);
-        if ($(this).offset().top <= scrollPos) { $(this).addClass('glow') }
-        else { $(this).removeClass('glow') }
-      })
-    }
-    */
 
     /** SMOOTH SCROOL & GLOW IN MENU **/
 

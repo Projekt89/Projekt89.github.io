@@ -262,27 +262,25 @@ article h2+p:first-of-type {
 /** PORTFOLIO **/
 
 .projects {
-  position: relative;
   overflow: hidden;
   padding-bottom: 0;
 }
 
 .projects .title {
   margin-left: 0;
-  max-width: 48%;
+  max-width: calc(50% - 15px);
   text-align: right;
+  position: relative;
 }
 
 .vertical-text {
   display: block;
   position: absolute;
-  top: 0;
-  left: 50%;
+  top: 0px;
+  left: calc(100% + 15px);
   z-index: 3;
-  padding-left: 50px;
   transform-origin: top left;
   transform: rotateZ(90deg) translate(0,-100%);
-  background: #FFFFFF;
   line-height: 30px;
   font-size: 1.35em;
   color: #179AFF;
@@ -292,7 +290,7 @@ article h2+p:first-of-type {
   content: '';
   position: absolute;
   top: 0;
-  left: -20px;
+  left: -40px;
   width: 1000%;
   height: 100%;
   background-color: #FFFFFF;
@@ -440,7 +438,7 @@ article h2+p:first-of-type {
 }
 
 .socials-about {
-  transform: translateY(260px);
+  margin-top: 260px;
 }
 
 /**
@@ -519,7 +517,7 @@ footer .title {
   background-image: url("../assets/img/logo.svg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 80%;
+  background-size: 100%;
   opacity: .2;
 }
 

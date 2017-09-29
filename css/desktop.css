@@ -172,14 +172,16 @@
 
   /** PORTFOLIO **/
   .vertical-text {
-    padding-left: 100px;
     line-height: 58px;
     font-size: 2.35em;
   }
 
+  .vertical-text::after {
+    left: -100px
+  }
+
   .project:nth-child(3n-1) {
     margin-left: 15%;
-    margin-right: auto;
     width: 75%;
   }
 
@@ -231,11 +233,10 @@
   }
 
   .socials-about {
-    transform: translateY(0px);
+    margin-top: 150px;
   }
 
   .socials-about li:first-child {
-    margin-top: 33%;
     margin-bottom: 10px;
   }
 
@@ -331,8 +332,111 @@
     ***** MAIN *****
     */
 
+    .exclamation-phrase {
+      margin-right: 68%;
+    }
+
+    /** PORTFOLIO **/
+
+    .projects .title {
+      max-width: calc(92% - 180px);
+      font-size: 4em;
+    }
+
+    .vertical-text {
+      line-height: 180px;
+      font-size: 4em;
+    }
+
+    .projects-list {
+      width: calc(92% - 180px);
+      flex-flow: row-reverse;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      box-sizing: border-box;
+      padding-left: 8%;
+      padding-right: 2%
+    }
+
+    .project {
+      width:  46%;
+    }
+
+    .project:nth-child(3n-1) {
+      margin-left: initial;
+      width: 46%;
+    }
+
+    .project:nth-child(2) {
+      margin-top: 100px;
+    }
+
+    .project:nth-child(2n+3) {
+      margin-top: -70px;
+    }
+
+    .project:nth-child(3n-1) .tech-list {
+      margin-left: -10px;
+    }
+
+    .project:nth-child(3n+4) .tech-list{
+      transform: translateX(0);
+      margin-left: -10px;
+    }
+
+    .portfolio-end-phrase {
+      font-size: 2em;
+      text-align: right;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .project:nth-child(3n+4) .tech-list::before{
+      display: block;
+    }
+
+    /** MORE INFO AND SOCIALS **/
+
+    .path-of-tech > .exclamation-phrase {
+      margin-right: 50%;
+    }
+
+    .more-info .wrapper {
+      padding: 0;
+      flex-flow: column;
+    }
+
+    .socials-about {
+      margin-top: 30px;
+    }
+
     /*
     ***** FOOTER *****
     */
+
+    .footer-content {
+      flex-flow: row-reverse;
+    }
+
+    .outer-links{
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      border-left: 150px solid #FFFFFF;
+      border-top: 75px solid #F2F2F2;
+      border-bottom: 75px solid #F2F2F2;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .links-list {
+      flex-flow: column;
+    }
+
+    .copy {
+      justify-content: center;
+      margin-left: 20%;
+      border: 10px solid #FFFFFF;
+    }
 
 }
