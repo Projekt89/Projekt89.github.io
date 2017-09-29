@@ -360,6 +360,7 @@
 
     .project {
       width:  46%;
+      transition: .3s all linear;
     }
 
     .project:nth-child(3n-1) {
@@ -382,6 +383,27 @@
     .project:nth-child(3n+4) .tech-list{
       transform: translateX(0);
       margin-left: -10px;
+    }
+
+    .project:hover {
+      transform: translate(20px, 0);
+    }
+
+    .tech-list {
+      transition: .3s all linear;
+    }
+
+    .project:hover .tech-list {
+      transform: translateX(-20px);
+    }
+
+    .tech-list::before {
+      transition: .3s all linear;
+      transform-origin: bottom left;
+    }
+
+    .project:hover .tech-list::before {
+      transform: scale(3);
     }
 
     .portfolio-end-phrase {
@@ -410,6 +432,15 @@
       margin-top: 30px;
     }
 
+    .icon, .link{
+      display: block;
+      transition: .2s all ease-out;
+    }
+
+    .icon:hover {
+      transform: scale(1.5);
+    }
+
     /*
     ***** FOOTER *****
     */
@@ -433,10 +464,22 @@
       flex-flow: column;
     }
 
+    .link:hover {
+      animation: .3s linear 0s 1 normal shake;
+    }
+
     .copy {
       justify-content: center;
       margin-left: 20%;
       border: 10px solid #FFFFFF;
     }
 
+    @keyframes shake {
+      0% {transform: translateX(0)}
+      20% {transform: translateX(-3px)}
+      40% {transform: translateX(6px)}
+      60% {transform: translateX(-4px)}
+      80% {transform: translateX(2px)}
+      100% {transform: translateX(0)}
+    }
 }

@@ -41,8 +41,6 @@
       $('html, body').animate( {scrollTop: sectionOffset}, 400);
     });
 
-
-
-
+    $('a[href^="http"]').attr('target', '_blank');
   });
 })();
