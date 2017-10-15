@@ -36,7 +36,7 @@
     $(".menu-button a").click(function(e){
       e.preventDefault();
       let sectionID = $(this).attr('href');
-      let sectionOffset = $(sectionID).offset().top;
+      let sectionOffset = $(sectionID).offset().top - 55;
       console.log(sectionOffset);
       $('html, body').animate( {scrollTop: sectionOffset}, 400);
     });

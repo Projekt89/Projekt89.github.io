@@ -396,6 +396,7 @@ article h2+p:first-of-type {
 
 .more-info .wrapper{
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   padding-left: 20px;
   padding-right: 20px;
@@ -439,6 +440,43 @@ article h2+p:first-of-type {
 
 .socials-about {
   margin-top: 260px;
+}
+
+/** CONTACT **/
+.contact {
+  min-width: 0;
+  background-color: #179AFF;
+  display:flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+
+.contact .title {
+  width: 100%;
+}
+
+.contact span {
+  display: block;
+  font-size: 1.4em;
+  margin-bottom: 5px;
+  letter-spacing: 0;
+}
+
+.email, .phone {
+  max-width: 100%;
+  word-wrap: break-word;
+  font-size: 1.3em;
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+
+.phone {
+  margin-left: auto;
+  text-align: right;
+}
+
+.email {
+  letter-spacing: 1px;
 }
 
 /**

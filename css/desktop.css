@@ -203,7 +203,7 @@
 
   /** MORE INFO AND SOCIALS **/
   .more-info .wrapper {
-    padding-left: 100px;
+    padding: 0 110px;
   }
 
   .more-info h3.title {
@@ -238,6 +238,12 @@
 
   .socials-about li:first-child {
     margin-bottom: 10px;
+  }
+
+  /** CONTACT **/
+  .contact {
+    margin-top: 68px;
+    font-weight: 600
   }
 
   /*
@@ -423,13 +429,18 @@
       margin-right: 50%;
     }
 
+    .more-info {
+      display: flex;
+    }
+
     .more-info .wrapper {
-      padding: 0;
-      flex-flow: column;
+      padding: 0 110px;
+      align-items: baseline;
+      flex-wrap: nowrap;
     }
 
     .socials-about {
-      margin-top: 30px;
+      align-self: flex-end;
     }
 
     .icon, .link{
@@ -439,6 +450,16 @@
 
     .icon:hover {
       transform: scale(1.5);
+    }
+
+    /** CONTACT **/
+    .contact {
+      width: auto;
+      padding: 0;
+    }
+
+    .contact div{
+      margin-top: 50px;
     }
 
     /*
