@@ -31,7 +31,7 @@
       };
     }
 
-    /** SMOOTH SCROOL & GLOW IN MENU **/
+    /** SMOOTH SCROOL **/
 
     $(".menu-button a").click(function(e){
       e.preventDefault();
